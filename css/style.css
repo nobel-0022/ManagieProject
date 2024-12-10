@@ -1,0 +1,799 @@
+/* Common Css Start */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ ul,ol{
+    list-style: none;
+ }
+ 
+ a{
+   text-decoration: none;
+   display: inline-block;
+ }
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ /* Common Css End */
+
+/* font-family: "Inter", sans-serif; */
+/*  font-family: "Space Grotesk", sans-serif; */
+
+/* nav Start */
+nav{
+   position: absolute;
+   top: 34px;
+   left: 0;
+   width: 100%;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+nav .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+nav img{
+  height: 32px;
+}
+
+nav .nav_item{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 60px;
+}
+nav ul{
+  display: contents;
+  font-weight: 400;
+
+}
+nav ul li{
+  position: relative;
+  cursor: pointer;
+ 
+}
+
+nav ul li::after{
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: .4s;
+
+
+}
+
+nav ul li:hover::after{
+   width: 100%;
+
+}
+
+nav .logo{
+  justify-self: center;
+}
+
+nav .button{
+  justify-self: center;
+}
+
+nav a{
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid transparent;
+  padding: 16px 40px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+nav a:hover{
+  border-color: #fff;
+}
+
+
+
+
+/* nav End */
+
+/* banner start */
+#banner{
+ 
+  background-color: #394792;
+  color: #fff;
+  padding-top: 210px;
+  padding-bottom: 135px;
+}
+#banner .sidebyside{
+  display: grid;
+  grid-template-columns: 62% 38%;
+
+}
+
+
+#banner .right img{
+  width: 532.56px;
+  position: relative;
+  left: -38px;
+  top: 213px;
+}
+#banner .left > p{
+  font-family: "Inter",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 617px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  line-height: 170%;
+}
+#banner .left a{
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 16px 40px;
+  border-radius: 30px;
+  transition: .4s;
+  margin-right: 24px;
+  font-family: "Inter",sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #394792;
+  background-color: #fff;
+}
+
+#banner .left a:hover{
+  background-color: transparent;
+  color: #fff;
+  
+}
+
+#banner .left .info{
+  display: grid;
+  grid-template-columns: repeat(3,90px);
+  margin-top: 60px;
+  gap: 80px;
+}
+
+#banner .left .info .item{
+  position: relative;
+}
+#banner .left .info .item::after{
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 1px;
+  height: 62px;
+  background: rgba(255, 255, 255, .16);
+  content: "";
+  transform: translateY(-50%);
+
+
+}
+
+#banner .left .info .item:last-child::after{
+    display: none;
+}
+#banner .left .info h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32;
+  font-weight: 400;
+}
+#banner .left h1{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  position:relative;
+ 
+}
+#banner .left h1 .shape{
+  width: 222px;
+  position: absolute;
+  bottom: -6px;
+  right: 18px;
+}
+#banner .left h1 .arrow{
+  width: 91px;
+  position: absolute;
+  bottom: 46px;
+  right: -71px;
+}
+#banner .left .info{
+  margin-top: 60px;
+}
+#banner .left .info p{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 86px;
+  line-height: 150%;
+  margin-top: 8px;
+}
+
+
+/* banner end */
+
+
+/* Management start */
+
+#management{
+  margin-top: 100px;
+}
+#management h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+
+}
+#management h2 img{
+  width: 162px;
+  position: relative;
+  top: -31px;
+  left: -46px;
+}
+#management .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(3,379px);
+  gap: 32px;
+  margin-top: 64px;
+}
+#management .item img{
+  width: 100%;
+}
+
+#management .item h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  line-height: 140%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+#management .item p{
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+/* Management end */
+
+
+/* Others start */
+
+#other{
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+#other .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  gap: 117px;
+}
+#other .left img{
+  width: 100%;
+}
+#other h2 img{
+  width: 237px;
+  position: relative;
+  top: -33px;
+  left: -27px;
+}
+#other .right h2{
+  font-family: "Space Grotesk", sans-serif; 
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 140%;
+
+}
+#other .right p{
+  font-family: "Inter", sans-serif; 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 524px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+#other .right ul{
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: grid;
+  gap: 34px;
+  align-items: center;
+
+}
+
+#other .right ul li{
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  border: 1px solid rgba(35, 35, 35, .16);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+#other .right ul img{
+  width: 44px;
+  height: 44px;
+}
+/* Others end */
+
+
+
+/* Users start */
+#users{
+  margin-top: 100px;
+  background: #F9FAFF;
+}
+#users .top-user{
+  display: grid;
+  grid-template-columns: repeat(2, 54%);
+}
+
+#users .top-user .right{
+
+   display: flex;
+   gap: 24px;
+   justify-content: end;
+   margin-top: 220px;
+}
+
+#users .top-user .right i{
+  width: 72px;
+  height: 72px;
+  background-color: #757575;
+  border-radius: 50px;
+  text-align: center;
+  align-content: center;
+  transition: .4s;
+}
+
+#users .top-user .right i:hover{
+  background-color: #394792;
+}
+#users .top-user .left h2{
+  color: #232323;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-style: 400;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -2.4px; 
+  
+}
+
+#users .top-user .left h2 img{
+  position: relative;
+  top: 29px;
+  left: -237px;
+ 
+}
+
+#users .top-user .left p{
+  color: #232323;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  width: 558px;
+  margin-top: 32px;
+  
+  
+}
+#users .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(2, 60%);
+  margin-top: 64px;
+}
+#users .sidebyside .left h3{
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.08px;
+  padding-top: 48px;
+  padding-left: 48px; 
+ 
+}
+#users .sidebyside .left p{
+  width: 496px;
+  color: #757575;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  margin-left: 48px;
+  margin-top: 24px;
+}
+#users .sidebyside .left{
+  background-color: #FFFFFF;
+  width: 592px;
+  height: 362px;
+  border-radius: 32px;
+  
+}
+#users .sidebyside .left .line{
+  width: 496px;
+  height: 1px;
+  color: #23232329;
+  background-color:  #23232329;
+  margin-left: 48px;
+  margin-top: 24px ;
+
+}
+#users .sidebyside .left .headding-icon i{
+  color: #FFC236;
+}
+#users .sidebyside .left .headding-icon{
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+  
+}
+#users .sidebyside .left .profile{
+  margin-left: 48px;
+  margin-top: 24px;
+ 
+}
+#users .sidebyside .left .profile img{
+  width: 72px;
+  height: 72px;
+}
+#users .sidebyside .left .p-name {
+  position: relative;
+  top: -124px;
+  left:50px;
+}
+#users .sidebyside .left .p-name p{
+  margin-top: 10px;
+  color: #757575;
+
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 30.6px */
+letter-spacing: -0.81px;
+}
+/* Users end */
+/* price start */
+ #price{
+  margin-top: 163px;
+  margin-bottom: 34px;
+ }
+ #price .subheading h2{
+  text-align: center;
+  color: #232323;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  margin-bottom: 32px;
+  
+ }
+
+ #price .title p{
+ text-align: center;
+ font-family: "Inter", sans-serif;
+ color: #232323;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 170%;
+ letter-spacing: -0.81px;
+ margin-bottom: 64px;
+ }
+ #price .pricing-plan{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 32px;
+ }
+ #price .pricing-plan .first{
+    background: #FFF;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    border-radius: 32px;
+   
+   
+    
+ }
+ #price .pricing-plan .first .first-heading{
+  border: 1px solid rgba(35, 35, 35, 0.16);
+  border-radius: 30px;
+  margin: 32px;
+  display: grid;
+  align-items: center;
+  padding: 6px 24px 6px 20px;
+  gap: 16px;
+  
+ }
+ #price .pricing-plan .first h3{
+   color: #232323;
+   text-align: center;
+   font-family: "Space Grotesk", sans-serif;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%;
+   letter-spacing: -1.6px;
+  
+ }
+
+ #price .pricing-plan .first h3 i{
+  position: relative;
+  left: -16px;
+  top: 3px;
+ }
+ #price .pricing-plan .first h2{
+  color: #232323;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -2.4px;
+  margin-left: 32px;
+  width: 100px;
+
+ }
+
+ #price .pricing-plan .first span{
+  position: relative;
+  top: -42px;
+  right: -94px;
+  color: #757575;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -1.2px;
+  margin-bottom: 25px;
+  
+ }
+ 
+ #price .pricing-plan .first p{
+  color: #757575;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.9px;
+  margin-left: 32px;
+  margin-bottom: 40px;
+ 
+ }
+
+ #price .pricing-plan .first .price-menu{
+  margin-left: 32px;
+  margin-bottom: 16px;
+
+ }
+
+ #price .pricing-plan .first .price-menu h4{
+  position: relative;
+  top: -30px;
+  left: 24px;
+  color: #232323;
+  font-family:"Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.9px;
+ }
+ #price .pricing-plan .first .price-menu i{
+  width: 24px;
+  height: 24px;
+  color: #155CB5;
+ }
+
+ #price .pricing-plan .first .disable h4{
+  position: relative;
+  top: -30px;
+  left: 24px;
+  color: #8E8E8E;
+  font-family:"Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.9px;
+ }
+ #price .pricing-plan .first .disable i{
+  width: 24px;
+  height: 24px;
+  color: #8E8E8E;
+ }
+
+ #price .pricing-plan .first .price-menu .btn {
+   border: 1px solid #8E8E8E;
+   border-radius: 100px;
+   background: #FFFFFF;
+   padding: 16px 82px;
+  margin-right: 32px;
+   
+ }
+ #price .pricing-plan .first .price-menu .btn{
+  text-align: center;
+  align-items: center;
+  color: #325b97;
+  font-family:"Inter", sans-serif;
+  font-size: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.9px;
+  transition: .4s;
+ }
+ #price .pricing-plan .first .price-menu .btn:hover{
+  background-color: #325b97;
+  color: #ffff;
+ }
+ #price .pricing-plan .second{
+  background: rgb(0, 255, 13);
+  width: 379px;
+height: 574px;
+}
+#price .pricing-plan .third{
+  background: rgb(17, 0, 255);
+  width: 379px;
+height: 574px;
+}
+/* price end */
+
+/* marginpart2 start */
+#manage2{
+  background: #F9FAFF;
+  margin-bottom: 100px;
+}
+
+#manage2 .container{
+  background-image: url("../image/manage2.png");
+  width: 1200px;
+  height: 420px;
+}
+
+#manage2 .container .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  gap: 24px;
+}
+
+#manage2 .container .sidebyside .first{
+  margin-top: 100px;
+  margin-left: 64px;
+
+}
+#manage2 .container .sidebyside .first h2{
+  color: #FFF;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -2.4px;
+}
+
+#manage2 .container .sidebyside .first a{
+   background-color: #fff;
+   padding: 18px 32px;
+   border-radius: 30px;
+   color: #325b97;
+   font-family:"Inter", sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -0.81px;
+   transition: .4s;
+   
+}
+#manage2 .container .sidebyside .first img{
+  position: relative;
+  top: 25px;
+  left: 53px;
+}
+#manage2 .container .sidebyside .first a:hover{
+  background-color: #325b97;
+  color: #fff;
+}
+#manage2 .container .sidebyside .second img{
+ width: 592px;
+ height: 320px;
+ position: relative;
+ top: 100px;
+ left: -15px;
+ border-radius: 0 0 32px 0;
+}
+
+#footer{
+  background:#FFF;
+}
+
+#footer .sidebyside{
+  display: grid;
+  grid-template-columns: repeat(5,21%);
+  
+ 
+  
+}
+#footer .sidebyside .second{
+  margin-left: 80px;
+}
+#footer .sidebyside .first img{
+    margin-top: 103px;
+    margin-bottom: 25px;
+}
+
+#footer .sidebyside .first p{
+  color: #325b97;
+  font-family:"Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  width: 275px;
+  
+}
+#footer .sidebyside .second h3{
+  margin-top: 113px;
+  font-family:"Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 32px;
+}
+
+#footer .sidebyside .second ul li{
+  
+  color: #232323;
+  font-family:"Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  margin-bottom: 32px;
+}
+ #footer .container .line{
+  width: 1200px;
+  height: 1px;
+  background-color: rgb(128, 124, 124);
+  margin-bottom: 32px;
+}
+#footer p{
+  color: #232323;
+  font-family:"Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 100px;
+}
+/* marginpart2 end */
+/* Management start */
+
+/* Management end */
+/* Management start */
+
+/* Management end */
